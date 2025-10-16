@@ -15,14 +15,36 @@ int main() {
     /*
     Variables support
     */
-   int i;
+   int i = 1;
+   int j = 1;
+   int k = 1;
     //-------------- End of section variables ----------------------
 
     // Implementation of looping for moving parts of chess / Implementando o looping para mover as peças do xadrez
+    /* 
+    Looping structure for part - Bishop / Estrutura de Loop para a peça - Bispo
+    */
+    printf("Using structure For\n");
     for ( i = 1; i <= bispo; i++)
     {
         printf("cima -> direita (%d - movimento)\n", i);
     }
+
+    // Using loop While for moving part bishop
+    printf("Using structure While \n");
+    while (j <= bispo)
+    {
+        printf("cima -> direita (%d - movimento)\n", j);
+        j++; //Counter for controller of repeat in loop
+    }
+
+    // Using loop "Do-While" for moving part bishop
+    printf("Using structure Do-While \n");
+    do
+    {
+        printf("cima -> direita (%d - movimento)\n", k);
+        k++;
+    } while (k <= bispo);
     
 
     // Implementação de Movimentação do Bispo
