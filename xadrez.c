@@ -24,6 +24,8 @@ int main() {
    int o = 1;
    int p = 1;
    int q = 1;
+   int cavalo_vertical;
+   int cavalo_horizontal;
     //-------------- End of section variables ----------------------
 
     // Implementation of looping for moving parts of chess / Implementando o looping para mover as peças do xadrez
@@ -100,6 +102,16 @@ int main() {
     // Nível Aventureiro - Movimentação do Cavalo
     // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
     // Um loop pode representar a movimentação horizontal e outro vertical.
+    printf("Structure logical of horse moviment\n");
+
+    for (cavalo_vertical = 0; cavalo_vertical < 1; cavalo_vertical++) // Loop externo
+    {
+        for (cavalo_horizontal = 0; cavalo_horizontal < 2; cavalo_horizontal++) // Loop interno
+        {
+            printf("Baixo\n");
+        }
+        printf("Esquerda\n");
+    }    
 
     // Nível Mestre - Funções Recursivas e Loops Aninhados
     // Sugestão: Substitua as movimentações das peças por funções recursivas.
