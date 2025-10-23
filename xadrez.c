@@ -1,3 +1,16 @@
+// Function recursive about move part chess - Bishop
+void actionBishop(int move)
+{
+    if (move == 0)
+    {
+        return;
+    }
+
+    printf("Cima -> direita\n");
+
+    actionBishop(move - 1);
+}
+
 #include <stdio.h>
 
 /*
@@ -116,6 +129,8 @@ int main() {
     // Nível Mestre - Funções Recursivas e Loops Aninhados
     // Sugestão: Substitua as movimentações das peças por funções recursivas.
     // Exemplo: Crie uma função recursiva para o movimento do Bispo.
+    printf("Calling function recursive of bishop move\n");
+    actionBishop(5);
 
     // Sugestão: Implemente a movimentação do Cavalo utilizando loops com variáveis múltiplas e condições avançadas.
     // Inclua o uso de continue e break dentro dos loops.
